@@ -1,4 +1,4 @@
-if (window){
+if (typeof window !== 'undefined') {
     let tg = window.Telegram.WebApp;
     document.getElementById("user_name").value = tg.initDataUnsafe.user.id;
 }    
