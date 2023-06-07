@@ -1,5 +1,7 @@
-let tg = window.Telegram.WebApp;
-document.getElementById("user_name").value = tg.initDataUnsafe.user.id;
+if (window){
+    let tg = window.Telegram.WebApp;
+    document.getElementById("user_name").value = tg.initDataUnsafe.user.id;
+}    
 
 const query = ` 
 SELECT * 
