@@ -1,3 +1,3 @@
-var WebApp = window.Telegram.WebApp;
+let tg = window.Telegram.WebApp;
 
-WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
+document.getElementById("user_name").value = tg.initDataUnsafe().first_name + " " + tg.initDataUnsafe.last_name
