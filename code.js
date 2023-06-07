@@ -9,7 +9,10 @@ FROM users
 require('dotenv').config();
 process.env.DATABASE_URL
 
-import { Client } from 'pg';
+import pkg from 'pg';
+const { Client } = pkg;
+
+// import { Client } from 'pg';
 let conString = process.env.DATABASE_URL;
 let client = new Client(conString);
 client.connect();
